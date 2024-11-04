@@ -8,7 +8,8 @@ def index():
 
 @app.route("/contato")
 def contato():
-    return("humberto.lima@aluno.ifsertao-pe.edu.br")
+
+    return render_template("contato.html", tel="(87) 988889898")
 
 if __name__ == '__main__':
     app.run()
