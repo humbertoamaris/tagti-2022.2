@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
 </head>
 <body>
 <nav>
     <a href="\contato"> Contato</a> 
     <a href="\home"> home</a>
 </nav>
+    <div class="container">  
+        <header>
+            <h1>Quem sou eu</h1>]
+            <p>Meu nome é Humberto, sou desenvolvedor web e estou aprendendo a usar o Flask </p>
+        </header>
+        <section>
+            <img src="{{ url_for('static', filename='img/foto.jpg') }}" alt="Foto minha">
+            <aside>
+                <h2>Minhas habilidades</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                </ul>
+            </aside>
+        </section>
 
-
-    <p>
-        <img src="{{ url_for('static', filename='img/download.jpg') }}"/>
-<p>
+          
+    </div>
+   
 </body>
 </html>
