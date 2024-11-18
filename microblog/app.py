@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -16,8 +16,7 @@ def dados():
     return render_template("dados.html", tel="(87) 988889894", email="humberto.lima@aluno.ifsertao-pe.edu.br")
 
 
-# calculadora pra somar dois numeros passados por parâmetro
+@app.route('/recebedados', methods=['POST'])
+def recebedados():
 
 
-if __name__ == '__main__':
-    app.run()
